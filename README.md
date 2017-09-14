@@ -13,3 +13,8 @@ How to run this software:
 cd src/lms
 python manage.py runserver
 ```
+
+### Function
+
+- Add/Delete/Update/list Student
+- Add/Delete/Update/list Seat
