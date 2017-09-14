@@ -22,6 +22,13 @@ cd src/lms
 python manage.py runserver
 ```
 
+And then you should create first user in the system:
+```
+python manage.py createsuperuser
+```
+
+Lastly, login the system as above created username.
+
 ### Functions
 
 - Add/Delete/Update/list Student
