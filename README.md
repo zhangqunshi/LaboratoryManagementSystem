@@ -8,3 +8,8 @@ Requirement:
 - Django: <https://www.djangoproject.com/>
 - MySQL: <https://www.mysql.com/>
 
+How to run this software:
+```
+cd src/lms
+python manage.py runserver
+```
