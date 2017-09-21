@@ -113,9 +113,10 @@ publicModule.service('tableItems', function () {
             if (this.currentPage < 1)   this.currentPage = 1;
             this.refreshContent();
         },
-        generatePages: function (newList, pageCount, totalNum) {
+        generatePages: function (newList, totalNum) {
             this.content = newList;
             this.totalNum = totalNum;
+            var pageCount = Math.floor((totalNum + this.itemsPerPage - 1) / this.itemsPerPage);
             this.totalPage = pageCount;
         },
         clear: function () {
@@ -217,7 +218,7 @@ publicModule
                 };
 
                 return $http({
-                    url: this.settings.backendAddress + '/staff/list',
+                    url: this.settings.backendAddress + '/staffs/',
                     method: 'GET',
                     params: args
                 });
@@ -230,7 +231,7 @@ publicModule
                 };
 
                 return $http({
-                    url: this.settings.backendAddress + '/staff/get',
+                    url: this.settings.backendAddress + '/staffs/' + staffId,
                     method: 'GET',
                     params: args
                 });

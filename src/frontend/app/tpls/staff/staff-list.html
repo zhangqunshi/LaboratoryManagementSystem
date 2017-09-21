@@ -101,9 +101,8 @@
                                         <label class="sr-only">Select all rows</label>
                                         <input type="checkbox" ng-click="items.selectAll($event)">
                                     </th>
-                                    <th>ID</th>
-                                    <th>姓名</th>
                                     <th>编号</th>
+                                    <th>姓名</th>
                                     <th>年级</th>
                                     <th>学历</th>
                                     <th>电话</th>
@@ -119,9 +118,8 @@
                                         <label class="sr-only"></label>
                                         <input ng-model="each.isSelected" type="checkbox">
                                     </td>
-                                    <td>{{each.data.id}}</td>
+                                    <td>{{each.data.staff_number}}</td>
                                     <td>{{each.data.name}}</td>
-                                    <td>{{each.data.number}}</td>
                                     <td>{{each.data.grade}}</td>
                                     <td>{{each.data.level}}</td>
                                     <td>{{each.data.phone}}</td>
@@ -131,11 +129,11 @@
 
                                     </td>
                                     <td class="operation">
-                                        <span><button class="btn fvms-btn-primary"
+                                        <span><button class="btn btn-default"
                                                       ng-click="detail(each.data.id)">详情</button></span>
-                                        <span><button class="btn fvms-btn-primary"
+                                        <span><button class="btn btn-default"
                                                       ng-click="delete(each.data.id)">删除</button></span>
-                                        <span><button class="btn fvms-btn-primary"
+                                        <span><button class="btn btn-default"
                                                       ng-click="update(each.data.id)">修改</button></span>
                                     </td>
                                 </tr>
