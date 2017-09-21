@@ -209,6 +209,7 @@ publicModule
                 backendAddress: SETTINGS.backendAddress
             },
 
+            // ---------------- staff ---------------------
             getStaffs: function (searchKey, searchValue, pageNumber, pageSize) {
                 var args = {
                     sk: searchKey,
@@ -279,6 +280,22 @@ publicModule
                 });
             },
 
+            // ---------------- seat ---------------------
+            getSeats: function (searchKey, searchValue, pageNumber, pageSize) {
+                var args = {
+                    sk: searchKey,
+                    sv: searchValue,
+                    pn: pageNumber,
+                    ps: pageSize,
+                };
+
+                return $http({
+                    url: this.settings.backendAddress + '/seats/',
+                    method: 'GET',
+                    params: args
+                });
+
+            },
         }
     }
 ]);

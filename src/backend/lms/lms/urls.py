@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework import routers
 
+from seat.views import SeatViewSet
 from staff.views import StaffViewSet
 from user.views import UserViewSet, GroupViewSet
 
@@ -25,6 +26,7 @@ router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
 router.register(r'staffs', StaffViewSet)
+router.register(r'seats', SeatViewSet)
 
 urlpatterns = [
     url(r'^api/', include(router.urls)),
