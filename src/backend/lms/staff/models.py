@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-from rest_framework import serializers
 
 
 class Staff(models.Model):
@@ -19,9 +18,3 @@ class Staff(models.Model):
 
     def __str__(self):
         return 'num=%s, name=%s' % (self.staff_number, self.name)
-
-
-class StaffSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Staff
-        fields = '__all__'
