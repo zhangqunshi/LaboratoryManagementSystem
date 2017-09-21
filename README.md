@@ -31,5 +31,5 @@ Lastly, login the system as above created username.
 
 ### Functions
 
-- Add/Delete/Update/list Student
+- Add/Delete/Update/list Staff
 - Add/Delete/Update/list Seat

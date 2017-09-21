@@ -1,0 +1,33 @@
+<div class="fvms-pagination clear-fix">
+    <!-- 新表格页码 -->
+    <div class="form-group-left">
+        <div class="fvms-pagesize">
+            <span>每页</span>
+            <select class="pagesize-select"
+                    ng-model="items.itemsPerPage"
+                    ng-change="items.refreshContent()">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+            </select>
+            <span>条</span>
+        </div>
+    </div>
+    <div class="form-group-right">
+        <div class="fvms-pageconfig">
+            <strong>共 {{items.totalNum}}条 当前: {{items.getCurrent()}}条</strong>
+            <ul class="fvms-page-btn fvms-page-back">
+                <li><a title="首页" ng-click="items.beginPage()"><span class="fa fa-angle-double-left"></span></a></li>
+                <li><a title="上页" ng-click="items.prevPage()"><span class="fa fa-angle-left"></span></a></li>
+            </ul>
+            <input type="number" min="1" max={{items.totalPage}} class="page-config-ipt"
+                ng-model="items.currentPage" ng-change="items.checkRange()"/>
+            <strong>of {{items.totalPage}}页</strong>
+            <ul class="fvms-page-btn fvms-page-forward">
+                <li><a title="下页" ng-click="items.nextPage()"><span class="fa fa-angle-right"></span></a></li>
+                <li><a title="尾页" ng-click="items.endPage()"><span class="fa fa-angle-double-right"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

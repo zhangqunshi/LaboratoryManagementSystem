@@ -1,0 +1,38 @@
+{
+  "name": "fvms-comparison",
+  "version": "1.0.0",
+  "description": "版本一致性",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.0.191/zhangqunshi/fvms.git"
+  },
+  "keywords": [
+    "fvms"
+  ],
+  "author": "WangAo",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "angular": "1.3.0",
+    "angular-patternfly": "3.16.0",
+    "angular-sanitize": "1.5.9",
+    "angular-ui-grid": "^4.0.6",
+    "angular-ui-router": "^1.0.3",
+    "bootstrap": "^3.3.7",
+    "echarts": "^3.7.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "2.1.4",
+    "patternfly": "3.16.0"
+  }
+}

@@ -1,0 +1,55 @@
+<!-- 新表格页码 -->
+<div class="col-md-12">
+    <form action="" class="fvms-pagination clear-fix">
+        <div class="form-group-left">
+            <div class="fvms-pagesize">
+                <span>每页</span>
+                <select name="" id="" class="pagesize-select" ng-model="$parent.items.itemsPerPage"
+                        ng-click="$parent.items.refreshContent()">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                </select>
+                <span>条</span>
+            </div>
+        </div>
+        <div class="form-group-right">
+            <div class="fvms-pageconfig">
+                <strong>
+                    <span class="page-item-total">总共{{$parent.items.totalNum}}条</span>
+                    当前:<span class="page-item-current">{{$parent.items.getCurrent()}}</span>条
+                </strong>
+                <ul class="fvms-page-btn fvms-page-back">
+                    <li>
+                        <a title="首页" ng-disabled="$parent.items.currentPage == 1" ng-click="$parent.items.beginPage()">
+                            <span class="fa fa-angle-double-left"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="上页" ng-disabled="$parent.items.currentPage == 1" ng-click="$parent.items.prevPage()">
+                            <span class="fa fa-angle-left"></span>
+                        </a>
+                    </li>
+                </ul>
+                <input type="number" min="1" max={{$parent.items.totalPage}} class="page-config-ipt"
+                       ng-model="$parent.items.currentPage" ng-change="$parent.items.checkRange($parent.items)"/><strong>of<span
+                    class="pages-total">{{$parent.items.totalPage}}页</span></strong>
+                <ul class="fvms-page-btn fvms-page-forward">
+                    <li>
+                        <a title="下页" ng-disabled="$parent.items.currentPage == $parent.items.totalPage"
+                           ng-click="$parent.items.nextPage()">
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="尾页" ng-disabled="$parent.items.currentPage == $parent.items.totalPage"
+                           ng-click="$parent.items.endPage()">
+                            <span class="fa fa-angle-double-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>

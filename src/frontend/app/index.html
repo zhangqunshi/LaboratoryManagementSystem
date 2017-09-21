@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <title>实验室管理系统</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="node_modules/angular-ui-grid/ui-grid.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly.min.css">
+    <link rel="stylesheet" href="node_modules/patternfly/dist/css/patternfly-additions.css">
+    <link rel="stylesheet" href="node_modules/angular-patternfly/dist/styles/angular-patternfly.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/patternfly/dist/js/patternfly.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="node_modules/angular-patternfly/dist/angular-patternfly.min.js"></script>
+    <script src="node_modules/echarts/dist/echarts.min.js"></script>
+
+    <!-- Lib -->
+    <script src="lib/Jquery.BlockUI/jquery.blockUI.min.js"></script>
+
+    <script src="js/modules.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <script src="app.js"></script>
+
+</head>
+<body ng-controller="authCtrl">
+<public-alert></public-alert>
+<ui-view></ui-view>
+</body>
+</html>
