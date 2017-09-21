@@ -27,7 +27,7 @@ router.register(r'groups', GroupViewSet)
 router.register(r'staffs', StaffViewSet)
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    url(r'^api/', include(router.urls)),
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
