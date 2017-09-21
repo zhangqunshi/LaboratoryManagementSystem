@@ -7,6 +7,7 @@ Install Requirement:
 - Python: <https://www.python.org/>
 - Django: <https://www.djangoproject.com/>
 - MySQL: <https://www.mysql.com/>
+- Nginx: <http://nginx.org/>
 
 
 ### How to create database:
@@ -18,6 +19,9 @@ Install Requirement:
 
 ### How to run this software:
 ```
+pip install django
+pip install djangorestframework
+
 cd src/lms
 python manage.py runserver
 ```
