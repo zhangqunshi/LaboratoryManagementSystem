@@ -38,8 +38,7 @@ staffModule.controller('staffCtrl', ['$scope', 'httpService', '$interval', 'SETT
                             data: v
                         })
                     });
-
-                    $scope.items.generatePages(newList, result.results.count);
+                    $scope.items.generatePages(newList, result.count);
                 })
                 .error(function (result, status) {
                     commonService.unblockUI();

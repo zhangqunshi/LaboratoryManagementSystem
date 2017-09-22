@@ -10,7 +10,7 @@
                     <div class="row">
 
                         <!-- 删除模态框 -->
-                        <div class="modal fade" id="fvms-modal-agent-delete" tabindex="-1" role="dialog"
+                        <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog"
                              aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog delete-dialog">
                                 <div class="modal-content">
@@ -31,7 +31,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="col-sm-12 text-center">
-                                                        <button type="button" class="btn fvms-btn-primary"
+                                                        <button type="button" class="btn btn-primary"
                                                                 style="margin-right: 20px;" ng-click="delete.confirm()">
                                                             确认
                                                         </button>
@@ -94,7 +94,7 @@
                         </div>
                         <!-- 表格内容 -->
                         <div class="col-md-12">
-                            <table class="table table-striped table-bordered table-hover dataTable property-table fvms-table">
+                            <table class="table table-striped table-bordered table-hover dataTable property-table">
                                 <thead>
                                 <tr>
                                     <th>
@@ -144,7 +144,9 @@
                             </table>
                         </div>
                         <!-- 新表格页码 -->
-                        <div ng-include="template_pagination"></div>
+                        <div class="col-md-12">
+                            <public-pagination items="items"></public-pagination>
+                        </div>
                     </div>
                 </div>
             </div>

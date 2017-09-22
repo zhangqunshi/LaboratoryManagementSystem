@@ -214,8 +214,8 @@ publicModule
                 var args = {
                     sk: searchKey,
                     sv: searchValue,
-                    pn: pageNumber,
-                    ps: pageSize,
+                    page: pageNumber,
+                    page_size: pageSize,
                 };
 
                 return $http({
